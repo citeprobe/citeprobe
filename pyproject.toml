@@ -1,0 +1,25 @@
+[project]
+name = "citeprobe"
+version = "0.1.0"
+description = "Sentence-level citation read from a frozen LLM's attention with a linear probe"
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.14.0",
+    "jsonargparse>=4.50.0",
+    "numpy>=2.0",
+    "safetensors>=0.5",
+    "torch>=2.6",
+    "transformers>=5.14,<6",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.16",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "B", "UP"]

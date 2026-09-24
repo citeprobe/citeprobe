@@ -1,0 +1,6 @@
+captures/
+runs/
+__pycache__/
+.venv/
+*.pyc
+.ruff_cache/

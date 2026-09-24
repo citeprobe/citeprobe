@@ -1,0 +1,1444 @@
+{
+  "split": "val",
+  "seed": 42,
+  "filters": {
+    "min_sentences": 3,
+    "max_sentences": 100,
+    "max_context_chars": 11000,
+    "gold_rule": "answer span substring in the gold passage",
+    "source": "tydiqa secondary_task train (english)"
+  },
+  "num_examples": 50,
+  "examples": [
+    {
+      "dataset_index": 42710,
+      "question": "How large is Johannesburg's population?",
+      "answer": "4,434,827",
+      "gold_source_indices": [
+        [
+          0,
+          1
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Johannesburg",
+          "text": [
+            "The metropolis is an alpha global city as listed by the Globalization and World Cities Research Network.",
+            "In 2011, the population of the city of Johannesburg was 4,434,827, making it the most populous city in South Africa.",
+            "[4] In the same year, the population of Johannesburg's urban agglomeration was put at 7,860,781.",
+            "[5] The land area of the municipal city (1,645km2 (635sqmi)) is large in comparison with those of other major cities, resulting in a moderate population density of 2,364/km2 (6,120/sqmi)."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 40892,
+      "question": "What is the largest cathedral in Ireland?",
+      "answer": "Saint Patrick's Cathedral",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "St Patrick's Cathedral, Dublin",
+          "text": [
+            "Saint Patrick's Cathedral (Irish: Ard-Eaglais Naomh Pádraig) in Dublin, Ireland, founded in 1191, is the National Cathedral of the Church of Ireland.",
+            "With its 43-metre (141ft) spire, St. Patrick's is the tallest church (not Cathedral) in Ireland and the largest.",
+            "[1] Christ Church Cathedral, also a Church of Ireland cathedral in Dublin, is designated as the local Cathedral of the diocese of Dublin and Glendalough.",
+            "[2]"
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 41876,
+      "question": "When was the Canadian Mounted Police formed?",
+      "answer": "1920",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Royal Canadian Mounted Police",
+          "text": [
+            "The Royal Canadian Mounted Police (RCMP) was formed in 1920 by the merger of the Royal Northwest Mounted Police (RNWMP), founded in 1873, with the Dominion Police founded in 1868.",
+            "The former was originally named the North West Mounted Police (NWMP), and was given the Royal prefix by King Edward VII in 1904.",
+            "Much of the present-day organization's symbolism has been inherited from its days as the NWMP and RNWMP, including the distinctive Red Serge uniform, paramilitary heritage, and mythos as a frontier force.",
+            "The RCMP-GRC wording is protected under the Trade-marks Act.",
+            "[12]"
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 41077,
+      "question": "What did chewing gum used to be made out of?",
+      "answer": "chicle",
+      "gold_source_indices": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          8
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Chewing gum",
+          "text": [
+            "Chewing gum in many forms has existed since the Neolithic period.",
+            "6,000-year-old chewing gum made from birch bark tar, with tooth imprints, has been found in Kierikki in Finland.",
+            "The tar from which the gums were made is believed to have antiseptic properties and other medicinal benefits.",
+            "[4] It is chemically similar to petroleum tar and is in this way different from most other early gum.",
+            "[5][6] The Mayans and Aztecs were the first to exploit the positive properties of gum,[7] they used chicle, a natural tree gum, as a base for making a gum-like substance[8] and to stick objects together in everyday use.",
+            "Forms of chewing gums were also chewed in Ancient Greece.",
+            "The Ancient Greeks chewed mastic gum, made from the resin of the mastic tree.",
+            "[9] Mastic gum, like birch bark tar, has antiseptic properties and is believed to have been used to maintain oral health.",
+            "[10] Both chicle and mastic are tree resins.",
+            "Many other cultures have chewed gum-like substances made from plants, grasses, and resins."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            4,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 40432,
+      "question": "What is the pH of the human stomach's acid?",
+      "answer": "1.5 to 3.5",
+      "gold_source_indices": [
+        [
+          0,
+          3
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Gastric acid",
+          "text": [
+            "The main constituent of gastric acid is hydrochloric acid which is produced by parietal cells (also called oxyntic cells) in the gastric glands in the stomach.",
+            "Its secretion is a complex and relatively energetically expensive process.",
+            "Parietal cells contain an extensive secretory network (called canaliculi) from which the hydrochloric acid is secreted into the lumen of the stomach.",
+            "The pH of gastric acid is 1.5 to 3.5[1] in the human stomach lumen, the acidity being maintained by the proton pump H+/K+ ATPase.",
+            "The parietal cell releases bicarbonate into the bloodstream in the process, which causes a temporary rise of pH in the blood, known as an alkaline tide."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 40564,
+      "question": "When did the Pretty Little Liars TV series first air?",
+      "answer": "June 8, 2010",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Pretty Little Liars",
+          "text": [
+            "The series premiered on June 8, 2010 on Freeform, formerly known as ABC Family, and ended on June 27, 2017.",
+            "After an initial order of 10 episodes, ABC Family ordered an additional 12 episodes on June 28, 2010.",
+            "The ratings success of the first 10 episodes prompted the book series to be extended beyond the initial eight novels.",
+            "[1] Since its debut, the series has received mixed reviews from television critics, but remained a relative success for Freeform, garnering a large fandom, primarily on social media."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 41092,
+      "question": "Who first published The House of Mirth?",
+      "answer": "Edith Wharton",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "The House of Mirth",
+          "text": [
+            "&Mirth The House of Mirth is a 1905 novel by the American author Edith Wharton.",
+            "It tells the story of Lily Bart, a well-born but impoverished woman belonging to New York City's high society around the turn of the last century.",
+            "[lower-alpha 1]   Wharton creates a portrait of a stunning beauty who, though raised and educated to marry well both socially and economically, is reaching her 29th year, an age when her youthful blush is drawing to a close and her marital prospects are becoming ever more limited.",
+            "The House of Mirth traces Lily's slow two-year social descent from privilege to a tragically lonely existence on the margins of society.",
+            "In the words of one scholar, Wharton uses Lily as an attack on  \"an irresponsible, grasping and morally corrupt upper class.",
+            "\"[2]"
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 40980,
+      "question": "Who played the voice of Mrs. Brisby in The Secret of NIMH?",
+      "answer": "Elizabeth Hartman",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "The Secret of NIMH",
+          "text": [
+            "Elizabeth Hartman as Mrs. Brisby, the main character of the film and the widowed mother of Teresa, Martin, Cynthia and Timmy.",
+            "Her husband, Jonathan, was killed and eaten alive by Farmer Fitzgibbons's pet cat Dragon, and she struggles to take care of her kids by herself.",
+            "Her main plot in the film is to find a society of lab rats to help her move her home to avoid destruction by Fitzgibbon's plow.",
+            "Derek Jacobi as Nicodemus Hermione Baddeley as Auntie Shrew John Carradine as The Great Owl Dom DeLuise as Jeremy the Crow Arthur Malet as Mr. Ages Peter Strauss as Justin Paul Shenar as Jenner Aldo Ray as Sullivan Shannen Doherty as Teresa Brisby, Mrs. Brisby's firstborn daughter.",
+            "She's always willing to help her mother take care of her siblings.",
+            "Wil Wheaton as Martin Brisby, Mrs. Brisby's firstborn son and second child.",
+            "He always wants to prove he's big enough to fight everything, and believes that he's not scared of anything.",
+            "Ian Fried as Timothy \"Timmy\" Brisby, Mrs. Brisby's second born son and third child.",
+            "He falls sick with pneumonia and Mrs. Brisby goes on a journey to help find a cure for him.",
+            "He later becomes the main protagonist in The Secret of NIMH 2: Timmy to the Rescue.",
+            "Jodi Hicks as Cynthia Brisby, Mrs. Brisby's second born daughter and youngest child.",
+            "She's the curious one out of the four mice kids.",
+            "Edie McClurg as Miss Right, a female crow who becomes Jeremy's girlfriend by the end of the film.",
+            "Tom Hatten as Farmer Fitzgibbons Lucille Bliss as Mrs. Beth Fitzgibbons Joshua Lawrence as Billy Fitzgibbons Charles Champlin, Dick Kleiner, and Norbert Auerbach as the Council rats"
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 41633,
+      "question": "What was the first song video to air on MTV?",
+      "answer": "\"Video Killed the Radio Star.\"",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "List of first music videos aired on MTV",
+          "text": [
+            "The Buggles had the honor of the inaugural video, with the appropriate \"Video Killed the Radio Star.\"",
+            "Although the fledgling network broadcast 208 video segments in its first 24 hours, only 116 videos were actually played as many were repeated.",
+            "For instance, \"You Better You Bet\" by The Who, which was also the first video to be repeated, \"Just Between You and Me\" by April Wine, and \"In the Air Tonight\" by Phil Collins were each played five times.",
+            "Rod Stewart made the most total appearances that day with 16, with 11 of his videos being played."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 41780,
+      "question": "When did the American Football League end?",
+      "answer": "1969",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "American Football League",
+          "text": [
+            "The American Football League (AFL) was a major professional American football league that operated for ten seasons from 1960 until 1969, when it merged with the older National Football League (NFL).",
+            "The upstart AFL operated in direct competition with the more established NFL throughout its existence.",
+            "It was more successful than earlier rivals to the NFL with the same name, the 1926, 1936 and 1940 leagues, and the later All-America Football Conference (which existed between 1944 and 1950 but only played between 1946 and 1949)."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 39995,
+      "question": "Who wrote the music for Disney's Mary Poppins?",
+      "answer": "The Sherman Brothers",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Sherman Brothers",
+          "text": [
+            "The Sherman Brothers wrote more motion-picture musical song scores than any other songwriting team in film history.",
+            "[2]  Film scores of the Sherman Brothers include Mary Poppins, Chitty Chitty Bang Bang, The Jungle Book (except “The Bare Necessities”), Bedknobs and Broomsticks, Charlotte's Web and The Aristocats.",
+            "Their most well known work, however, remains the theme park song \"It's a Small World (After All)\".",
+            "According to Time.com, this song is the most performed song of all time.",
+            "[3][4]"
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 42575,
+      "question": "How many battle ships did Japan employ in WWII?",
+      "answer": "12",
+      "gold_source_indices": [
+        [
+          0,
+          1
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Imperial Japanese Navy in World War II",
+          "text": [
+            "Even after the disaster at Philippine Sea, the IJN was still a formidable force.",
+            "Of the 12 battleships that were available at the beginning of the war in 1941-42, nine still remained operational, together with 14 out of the original 18 heavy cruisers.",
+            "[55] However, efforts to rebuild the carrier force were unsuccessful since the training given to new aviators was of a very low standard.",
+            "Consequently, the new Unryū carriers never went to sea with a full air group.",
+            "This left the Japanese with a ragtag collection of carriers, led by the Zuikaku, which was the sole survivor of the Pearl Harbor attack force.",
+            "The Japanese were left with two choices, either to commit their remaining strength in an all-out offensive, or to sit by while the Americans occupied the Philippines and cut the sea lanes between Japan and vital resources from the Dutch East Indies and Malaya.",
+            "The plan devised by the Japanese was a final attempt to create a decisive battle by utilizing their last remaining strength, the firepower of its heavy cruisers and battleships, which were to be all committed against the American beachhead at Leyte.",
+            "The Japanese planned to use their remaining carriers as bait, in order to lure the American carriers away from Leyte Gulf long enough for the heavy warships to enter and destroy any American ships present."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 41564,
+      "question": "What is lean manufacturing?",
+      "answer": "a systematic method for waste minimization (known by\"Muda\") within a manufacturing system without sacrificing productivity, which can cause problems",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Lean manufacturing",
+          "text": [
+            "Lean manufacturing or lean production, often simply \"lean\", is a systematic method for waste minimization (known by\"Muda\") within a manufacturing system without sacrificing productivity, which can cause problems.",
+            "Lean also takes into account waste created through overburden ( the \"Muri\") and waste created through unevenness in work loads (the \"Mura\").",
+            "Working from the perspective of the client who consumes a product or service, \"value\" is any action or process that a customer would be willing to pay for."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 39458,
+      "question": "When does Menopause start?",
+      "answer": "49",
+      "gold_source_indices": [
+        [
+          0,
+          1
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Menopause",
+          "text": [
+            "Menopause, also known as the climacteric, is the time in most women's lives when menstrual periods stop permanently, and they are no longer able to bear children.",
+            "[2][8] Menopause typically occurs between 49 and 52 years of age.",
+            "[3] Medical professionals often define menopause as having occurred when a woman has not had any vaginal bleeding for a year.",
+            "[4] It may also be defined by a decrease in hormone production by the ovaries.",
+            "[9] In those who have had surgery to remove their uterus but still have ovaries, menopause may be viewed to have occurred at the time of the surgery or when their hormone levels fell.",
+            "[9] Following the removal of the uterus, symptoms typically occur earlier, at an average of 45 years of age.",
+            "[10]"
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 39955,
+      "question": "When was the first Peanuts comic strip printed?",
+      "answer": "October 2, 1950",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Peanuts",
+          "text": [
+            "Peanuts is a syndicated daily and Sunday American comic strip written and illustrated by Charles M. Schulz that ran from October 2, 1950, to February 13, 2000, continuing in reruns afterward.",
+            "Peanuts is among the most popular and influential in the history of comic strips, with 17,897 strips published in all,[1] making it \"arguably the longest story ever told by one human being\".",
+            "[2] At its peak in the mid- to late 1960s, Peanuts ran in over 2,600 newspapers, with a readership of around 355 million in 75 countries, and was translated into 21 languages.",
+            "[3] It helped to cement the four-panel gag strip as the standard in the United States,[4] and together with its merchandise earned Schulz more than $1 billion.",
+            "[1]"
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 41022,
+      "question": "Who played the original Marlboro Man?",
+      "answer": "Christian Haren",
+      "gold_source_indices": [
+        [
+          0,
+          4
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Marlboro Man",
+          "text": [
+            "Initially, cowboy commercials involving the Marlboro Man featured paid models, such as William Thourlby,[17] pretending to carry out cowboy tasks.",
+            "However, Burnett felt that the commercials lacked authenticity, as it was apparent that the subjects were not real cowboys and did not have the desired rugged look.",
+            "One of the finest was a non-smoking rodeo cowboy, Max Bryan \"Turk\" Robinson, who was recruited at a rodeo.",
+            "Leo Burnett was not satisfied with the cowboy actors found.",
+            "Broadway and MGM movie actor Christian Haren won the role as the first Marlboro Man in the early 1960s as he looked the part.",
+            "Burnett then came across Darrell Winfield, who worked on a ranch, after a Cattle Rancher by the name Keith Alexander declined the role because he did not believe in smoking.",
+            "Leo Burnett’s creative director was awed when he first saw Winfield: \"I had seen cowboys, but I had never seen one that just really, like, he sort of scared the hell out of me (as he was so much a real cowboy).\"",
+            "Winfield’s immediate authenticity led to his 20-year run as the Marlboro Man, which lasted until the late 1980s.",
+            "Upon Winfield’s retirement, Philip Morris reportedly spent $300 million searching for a new Marlboro Man.",
+            "[18][19]"
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 42686,
+      "question": "When did the Chinese writing system develop?",
+      "answer": "1200–1050 BC",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Written Chinese",
+          "text": [
+            "Various current Chinese characters have been traced back to the late Shang Dynasty about 1200–1050 BC,[6][7][8] but the process of creating characters is thought to have begun some centuries earlier.",
+            "[9]  After a period of variation and evolution, Chinese characters were standardized under the Qin Dynasty (221–206 BC).",
+            "[10]  Over the millennia, these characters have evolved into well-developed styles of Chinese calligraphy.",
+            "[11] As the varieties of Chinese diverged, a situation of diglossia developed, with speakers of mutually unintelligible varieties able to communicate through writing using Classical Chinese.",
+            "[12] In the early 20th century, Classical Chinese was replaced in this role by written vernacular Chinese, corresponding to the standard spoken language (\"Mandarin\").",
+            "Although most other varieties of Chinese are not written, there are traditions of written Cantonese, written Shanghainese and written Hokkien, among others."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 41248,
+      "question": "How many species of kelp are there?",
+      "answer": "30",
+      "gold_source_indices": [
+        [
+          0,
+          1
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Kelp",
+          "text": [
+            "Kelps are large brown algae seaweeds that make up the order Laminariales.",
+            "There are about 30 different genera.",
+            "[3]"
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 41440,
+      "question": "Who was the last emperor of Rome?",
+      "answer": "Romulus Augustulus",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Romulus Augustulus",
+          "text": [
+            "Flavius Romulus Augustus (c. AD 460 – after AD 476; possibly still alive as late as AD 507),[3] known derisively and historiographically as Romulus Augustulus, was the Roman emperor who ruled the Western Roman Empire from 31 October 475 until 4 September 476.",
+            "He is often described as the \"last Western Roman emperor\", though some historians consider this to be Julius Nepos.",
+            "His deposition by Odoacer traditionally marks the end of the Roman Empire in the West, the end of Ancient Rome, and the beginning of the Middle Ages in Western Europe."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 40963,
+      "question": "What is the population of Letterkenny?",
+      "answer": "19,274",
+      "gold_source_indices": [
+        [
+          0,
+          1
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Letterkenny",
+          "text": [
+            "Letterkenny  (Irish: Leitir Ceanainn, meaning \"hillside of the O'Cannons\"), nicknamed \"the Cathedral Town\",[2][3] is the largest and most populous town in County Donegal in Ulster, Ireland.",
+            "It lies on the River Swilly in East Donegal and has a population of 19,274.",
+            "[1] Along with the nearby city of Derry, Letterkenny is considered a regional economic gateway[4] for the North-West of Ireland.",
+            "Letterkenny acts as an urban gateway to the Ulster Gaeltacht, similar to Galway's relationship to the Connemara Gaeltacht."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 41096,
+      "question": "When did Jewish people first come to England?",
+      "answer": "1070",
+      "gold_source_indices": [
+        [
+          0,
+          1
+        ]
+      ],
+      "sources": [
+        {
+          "title": "History of the Jews in England",
+          "text": [
+            "The history of the Jews in England  goes back to the reign of William the Conqueror.",
+            "The first written record of Jewish settlement in England dates from 1070.",
+            "The Jewish settlement continued until King Edward I's Edict of Expulsion in 1290.",
+            "After the expulsion, there was no Jewish community, apart from individuals who practised Judaism secretly,  until the rule of Oliver Cromwell.",
+            "While Cromwell never officially readmitted Jews to the Commonwealth of England, a small colony of Sephardic Jews living in London was identified in 1656 and allowed to remain."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 40572,
+      "question": "What was the best selling album of 2016?",
+      "answer": "Adele's 25",
+      "gold_source_indices": [
+        [
+          0,
+          3
+        ]
+      ],
+      "sources": [
+        {
+          "title": "List of Billboard 200 number-one albums of 2016",
+          "text": [
+            "The highest-selling albums and EPs in the United States are ranked in the Billboard 200, which is published by Billboard magazine.",
+            "The data are compiled by Nielsen Soundscan based on each album's weekly physical and digital sales, as well as on-demand streaming and digital sales of its individual tracks.",
+            "In 2016, a total of 33 albums claimed the top position of the chart.",
+            "One of which, English singer Adele's 25 started its peak issue dated December 12, 2015.",
+            "[1] Canadian hip hop soul artist Drake's fourth studio album, Views, became the second best-selling overall album with 1.04million equivalent album units, selling 852,000 copies in its first week of release, and achieving over 245million streams, more than previous record 115.2 million by Beyoncé's Lemonade.",
+            "[2][3] Lemonade is the third overall best-seller, incurring 485,000 copies in its first week (653,000 with additional album-equivalent units).",
+            "[4]"
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 41238,
+      "question": "When were the Federalist papers published?",
+      "answer": "October 1787 and April 1788",
+      "gold_source_indices": [
+        [
+          0,
+          1
+        ]
+      ],
+      "sources": [
+        {
+          "title": "The Federalist Papers",
+          "text": [
+            "The Federalist (later known as The Federalist Papers) is a collection of 85 articles and essays written by Alexander Hamilton, James Madison, and John Jay under the pseudonym \"Publius\" to promote the ratification of the United States Constitution.",
+            "The first 77 of these essays were published serially in the Independent Journal, the New York Packet, and The Daily Advertiser between October 1787 and April 1788.",
+            "[1] A two-volume compilation of these 77 essays and eight others was published as The Federalist: A Collection of Essays, Written in Favour of the New Constitution, as Agreed upon by the Federal Convention, September 17, 1787 by publishing firm J.",
+            "& A. McLean in March and May 1788.",
+            "[2][3] The collection was commonly known as The Federalist until the name The Federalist Papers emerged in the 20th century."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 43026,
+      "question": "When was West Virginia University founded?",
+      "answer": "February 7, 1867",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "History of West Virginia University",
+          "text": [
+            "Under the terms of the 1862 Morrill Land-Grant Colleges Act, the West Virginia Legislature created the Agricultural College of West Virginia on February 7, 1867, and the school officially opened on September 2 of the same year.",
+            "[2][3] On December 4, 1868, lawmakers renamed the college West Virginia University to represent a broader range of higher education.",
+            "[4] The University was built on the grounds of three former academies, namely the Monongalia Academy of 1814, the Morgantown Female Academy of 1831, and Woodburn Female Seminary of 1858.",
+            "[5] Upon its founding, the local newspaper claimed that \"a place more eligible for the quiet and successful pursuit of science and literature is nowhere to be found.",
+            "\"[3]"
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 39902,
+      "question": "When did the first season of the Game of Thrones TV series air?",
+      "answer": "April 17, 2011",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Game of Thrones (season 1)",
+          "text": [
+            "The first season of the fantasy drama television series Game of Thrones premiered on HBO on April 17, 2011 in the U.S., and concluded on June 19, 2011.",
+            "It consists of ten episodes, each of approximately 55 minutes.",
+            "The series is based on A Game of Thrones, the first novel in the A Song of Ice and Fire series by George R. R. Martin, adapted for television by David Benioff and D. B. Weiss.",
+            "HBO had ordered a television pilot in November 2008; filming began the following year.",
+            "However, it was deemed unsatisfactory and later reshot with some roles being recast.",
+            "In March 2010, HBO ordered the first season, which began filming in July 2010, primarily in Belfast, Northern Ireland, with additional filming in Malta."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 41215,
+      "question": "When was the Circuit de Barcelona-Catalunya built?",
+      "answer": "1991",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Circuit de Barcelona-Catalunya",
+          "text": [
+            "The Circuit de Barcelona-Catalunya was built in 1991 and began hosting the Spanish Grand Prix that same year.",
+            "Construction also coincided with the Olympic Games scheduled to take place in Barcelona[4] the next year, where the circuit acted as the start and finish line for the road team time trial cycling event.",
+            "[5] The Circuit de Barcelona-Catalunya should not be confused with the Montjuïc circuit, which hosted the Spanish Grand Prix four times between 1969 and 1975 and, unlike the Circuit de Barcelona-Catalunya, is actually located within the city of Barcelona."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 40966,
+      "question": "What kind of illness is measles?",
+      "answer": "a highly contagious infectious disease caused by the measles virus",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Measles",
+          "text": [
+            "Measles is a highly contagious infectious disease caused by the measles virus.",
+            "[3][9] Symptoms usually develop 10–12 days after exposure to an infected person and last 7–10 days.",
+            "[6][7] Initial symptoms typically include fever, often greater than 40°C (104.0°F), cough, runny nose, and inflamed eyes.",
+            "[3][4] Small white spots known as Koplik's spots may form inside the mouth two or three days after the start of symptoms.",
+            "[4] A red, flat rash which usually starts on the face and then spreads to the rest of the body typically begins three to five days after the start of symptoms.",
+            "[4] Common complications include diarrhea (in 8% of cases), middle ear infection (7%), and pneumonia (6%).",
+            "[5] Less commonly seizures, blindness, or inflammation of the brain may occur.",
+            "[6][5] Other names include morbilli, rubeola, red measles, and English measles.",
+            "[1][2] Rubella, which is sometimes called German measles, and roseola are different diseases caused by unrelated viruses.",
+            "[10]"
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 39510,
+      "question": "When did the Isle of Man Railway start running?",
+      "answer": "1 July 1873",
+      "gold_source_indices": [
+        [
+          0,
+          1
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Isle of Man Railway",
+          "text": [
+            "The 15.3-mile (24.6km) line from Douglas to Port Erin is the last remaining line of the former Isle of Man Railway Company, formed in 1870.",
+            "Its first line, from Douglas to Peel, opened on 1 July 1873, followed by the Port Erin line on 1 August 1874.",
+            "Initially the Port Erin line had been planned to terminate at Castletown, but the construction of deep water docks at Port Erin caused an extension to the line.",
+            "A few years after completion, the dock was destroyed by heavy seas and the idea of deep water vessels abandoned there.",
+            "The remains of the breakwater are still visible at low tide."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 40342,
+      "question": "When was the visual novel Clannad first released?",
+      "answer": "April 28, 2004",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Clannad (visual novel)",
+          "text": [
+            "Clannad(クラナド,Kuranado) is a Japanese visual novel developed by Key and released on April 28, 2004 for Windows PCs.",
+            "While both of Key's first two previous works, Kanon and Air, had been released first as adult games and then censored for the younger market, Clannad was released with a rating for all ages.",
+            "It was later ported to the PlayStation 2, PlayStation Portable, Xbox 360, PlayStation 3, PlayStation Vita, PlayStation 4 and Nintendo Switch consoles.",
+            "An English version for Windows was released on Steam by Sekai Project in 2015.",
+            "The story follows the life of Tomoya Okazaki, an average high school student who meets many people in his last year at school, including five girls, and helps resolve their individual problems."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 42762,
+      "question": "When did the character AnnaLynne McCord first appear on 90210?",
+      "answer": "2008",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "AnnaLynne McCord",
+          "text": [
+            "In 2008, McCord was cast in the series 90210 as Naomi Clark.",
+            "[13][14] Throughout the show, McCord's character vies for social power and love.",
+            "McCord was nominated for multiple awards for her work in the role, winning the Hollywood Life Young Hollywood Superstar of Tomorrow in 2009, and a nomination for a Teen Choice Award for \"Breakthrough Standout Performance\" in 2010.",
+            "[15][16][17]"
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 42255,
+      "question": "Who was the main character in How I Met Your Mother?",
+      "answer": "Ted Mosby",
+      "gold_source_indices": [
+        [
+          0,
+          1
+        ]
+      ],
+      "sources": [
+        {
+          "title": "List of How I Met Your Mother characters",
+          "text": [
+            "The American sitcom How I Met Your Mother premiered on CBS on September 19, 2005.",
+            "Created by Craig Thomas and Carter Bays, the show is presented from the perspective of Ted Mosby in 2030 (\"Future Ted\") as he tells his children how he met the titular mother.",
+            "The show lasted for nine seasons and 208 episodes; the finale first aired on March 31, 2014."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 40706,
+      "question": "When did the Commercial Revolution end?",
+      "answer": "mid-18th century",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Commercial Revolution",
+          "text": [
+            "The Commercial Revolution consisted in the creation of a European economy based on trade, which began in the 11th century and lasted until it was succeeded by the Industrial Revolution in the mid-18th century.",
+            "Beginning with the Crusades, Europeans rediscovered  spices,  silks, and other commodities rare in Europe.",
+            "This development created a new desire for trade, and trade expanded in the second half of the Middle Ages.",
+            "Newly forming European states, through voyages of discovery, were looking for alternative trade routes in the 15th and 16th centuries, which allowed the European powers to build vast, new international trade networks.",
+            "Nations also sought new sources of wealth and practiced mercantilism and colonialism.",
+            "The Commercial Revolution is marked by an increase in general commerce, and in the growth of financial services such as banking, insurance, and investing."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 39993,
+      "question": "What year was Superhot released?",
+      "answer": "2013",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Superhot",
+          "text": [
+            "The game originated as an entry in the 2013 7 Day FPS Challenge, which Superhot Team expanded into a browser-based demonstration that September.",
+            "Widespread attention from the demonstration prompted the team to develop out the full game, using Kickstarter to secure funding to complete the title.",
+            "Superhot was released for Microsoft Windows, OS X, and Linux in February 2016.",
+            "An Xbox One version was released in May 2016, and a PlayStation 4 version was released in July 2017.",
+            "A rebuilt version of the game to better support virtual reality, Superhot VR, was later released for the Oculus Rift, HTC Vive, and PlayStation VR headset devices.",
+            "A standalone expansion, Superhot: Mind Control Delete, which utilizes roguelike elements such as procedural generation and permadeath, is planned for a 2018 release and became available through early access in December 2017."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 41575,
+      "question": "When was the Third Sacred War?",
+      "answer": "356–346 BC",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Third Sacred War",
+          "text": [
+            "The Third Sacred War (356–346 BC) was fought between the forces of the Delphic Amphictyonic League, principally represented by Thebes, and latterly by Philip II of Macedon, and the Phocians.",
+            "The war was caused by a large fine imposed in 357 BC on the Phocians by the Amphictyonic League (dominated at that moment by Thebes), for the offense of cultivating sacred land; refusing to pay, the Phocians instead seized the Temple of Apollo in Delphi, and used the accumulated treasures to fund large mercenary armies.",
+            "Thus, although the Phocians suffered several major defeats, they were able to continue the war for many years, until eventually all parties were nearing exhaustion.",
+            "Philip II used the distraction of the other states to increase his power in northern Greece, in the process becoming ruler of Thessaly.",
+            "In the end, Philip's growing power, and the exhaustion of the other states, allowed him to impose a peaceful settlement of the war, marking a major step in the rise of Macedon to pre-eminence in Ancient Greece."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 40851,
+      "question": "How long was production on Walt Disney Pictures' animated feature film Beauty and the Beast?",
+      "answer": "two years",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Beauty and the Beast (1991 film)",
+          "text": [
+            "Production of Beauty and the Beast was to be completed on a compressed timeline of two years rather than the traditional four-year Disney Feature Animation production schedule; this was due to the loss of production time spent developing the earlier Purdum version of the film.",
+            "[10] Most of the production was done at the main Feature Animation studio, housed in the Air Way facility in Glendale, California.",
+            "A smaller team at the Disney-MGM Studios theme park in Lake Buena Vista, Florida assisted the California team on several scenes, particularly the \"Be Our Guest\" number.",
+            "[12]"
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 42853,
+      "question": "What is the size of Japan by area?",
+      "answer": "(145,936.53",
+      "gold_source_indices": [
+        [
+          0,
+          4
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Geography of Japan",
+          "text": [
+            "Japan is an island nation comprising a stratovolcanic archipelago over 3,000km (1,900mi) along East Asia's Pacific coast.",
+            "[5] It consists of 6,852 islands.",
+            "[6] The main islands are Honshu, Kyushu, Shikoku and Hokkaido.",
+            "The Ryukyu Islands and Nanpō Islands are south of the main islands.",
+            "The territory extends 377,973.89km2 (145,936.53sqmi).",
+            "[1] It is the largest island country in East Asia and fourth largest island country in the world.",
+            "Japan has the sixth longest coastline 29,751km (18,486mi) and the eight largest Exclusive Economic Zone of 4,470,000km2 (1,730,000sqmi) in the world.",
+            "[7]"
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 42718,
+      "question": "When was Sir John Robert Kerr born?",
+      "answer": "24 September 1914",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "John Kerr (governor-general)",
+          "text": [
+            "Sir John Robert Kerr, AK,GCMG,GCVO,QC  (24 September 1914 – 24 March 1991) was the 18th Governor-General of Australia.",
+            "He dismissed the Labor government of Gough Whitlam on 11 November 1975, marking the climax of the most significant constitutional crisis in Australian history.",
+            "He had previously been the 13th Chief Justice of the Supreme Court of New South Wales."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 40463,
+      "question": "How old was Wilton Norman Chamberlain?",
+      "answer": "63",
+      "gold_source_indices": [
+        [
+          0,
+          6
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Wilt Chamberlain",
+          "text": [
+            "Chamberlain had a history of heart trouble.",
+            "In 1992, he was briefly hospitalized for an irregular heartbeat.",
+            "[172] According to those close to him, he eventually began taking medication for his heart troubles.",
+            "[173][174] In 1999, his condition deteriorated rapidly.",
+            "During this time, he lost 50 pounds.",
+            "[175] After undergoing dental surgery in the week before his death, he was in great pain and seemed unable to recover from the stress.",
+            "On October 12, 1999, Chamberlain died in Bel-Air, California, at the age of 63.",
+            "[2][176] He was cremated.",
+            "[177] His agent Sy Goldberg stated Chamberlain died of congestive heart failure.",
+            "[178] He was survived by his sisters Barbara Lewis, Margaret Lane, Selina Gross and Yvonne Chamberlain, and brothers Wilbert and Oliver Chamberlain.",
+            "[2]"
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 41510,
+      "question": "How long did King Victor Emmanuel II reign?",
+      "answer": "1849 until 17 March 1861",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Victor Emmanuel II of Italy",
+          "text": [
+            "Victor Emmanuel II (Italian: Vittorio Emanuele II; full name: Vittorio Emanuele Maria Alberto Eugenio Ferdinando Tommaso di Savoia; 14 March 1820 – 9 January 1878) was King of Sardinia from 1849 until 17 March 1861.",
+            "At that point, he assumed the title of King of Italy and became the first king of a united Italy since the 6th century, a title he held until his death in 1878.",
+            "The Italians gave him the epithet of Father of the Fatherland (Italian: Padre della Patria).",
+            "The monument Altare della Patria (or Vittoriano) in Rome was built in his honor."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 42509,
+      "question": "Who was the last King of Portugal?",
+      "answer": "Dom Manuel II",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Manuel II of Portugal",
+          "text": [
+            "Dom Manuel II[2] (15 November 1889 – 2 July 1932), \"the Patriot\" (Portuguese: \"o Patriota\") or \"the Unfortunate\" (Portuguese: \"o Desventurado\"), was the last King of Portugal, ascending the throne after the assassination of his father, King Carlos I, and his elder brother, Luís Filipe, the Prince Royal.",
+            "Before ascending the throne he held the title of Duke of Beja.",
+            "His reign ended with the dissolution of the monarchy in the 5 October 1910 revolution, and Manuel lived the rest of his life in exile in Twickenham, South London."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 41310,
+      "question": "Where was the first university Cognitive Science department in the US?",
+      "answer": "University of California, San Diego",
+      "gold_source_indices": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Cognitive science",
+          "text": [
+            "The term cognitive science was coined by Christopher Longuet-Higgins in his 1973 commentary on the Lighthill report, which concerned the then-current state of Artificial Intelligence research.",
+            "[15] In the same decade, the journal Cognitive Science and the Cognitive Science Society were founded.",
+            "[16] The founding meeting of the Cognitive Science Society was held at the University of California, San Diego in 1979, which resulted in cognitive science becoming an internationally visible enterprise.",
+            "[17] In 1972, Hampshire College started the first undergraduate education program in Cognitive Science, led by Neil Stillings.",
+            "In 1982, with assistance from Professor Stillings, Vassar College became the first institution in the world to grant an undergraduate degree in Cognitive Science.",
+            "[18] In 1986, the first Cognitive Science Department in the world was founded at the University of California, San Diego.",
+            "[17]"
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            2,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 39611,
+      "question": "Where was Albert Neisser born?",
+      "answer": "town of Schweidnitz (now Świdnica, in Poland)",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Albert Ludwig Sigesmund Neisser",
+          "text": [
+            "Neisser was born in the Silesian town of Schweidnitz (now Świdnica, in Poland), the son of a well-known Jewish physician, Dr. Moritz Neisser.",
+            "After he completed the elementary school in Münsterberg, Neisser enrolled in the St. Maria Magdalena School in Breslau (now Wrocław, in Poland).",
+            "In this school, he was a contemporary of another great name in the history of medicine, Paul Ehrlich.",
+            "He obtained the Abitur in 1872."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 41207,
+      "question": "When were the first Winter Olympics?",
+      "answer": "Chamonix, France",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "1924 Winter Olympics",
+          "text": [
+            "The 1924 Winter Olympics, officially known as the I Olympic Winter Games (French: Les Iers Jeux olympiques d'hiver), were a winter multi-sport event which was held in 1924 in Chamonix, France.",
+            "Originally held in association with the 1924 Summer Olympics, the sports competitions were held at the foot of Mont Blanc in Chamonix, and Haute-Savoie, France between January 25 and February 5, 1924.",
+            "[1]  The Games were organized by the French Olympic Committee, and were in retrospect designated by the International Olympic Committee (IOC) as the I Olympic Winter Games."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 40265,
+      "question": "When was Naomi Clark cast as AnnaLynne McCord?",
+      "answer": "2008",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "AnnaLynne McCord",
+          "text": [
+            "In 2008, she was the eighteenth actress to be cast in The CW series 90210, portraying antiheroine Naomi Clark.",
+            "Initially, the part of Clark was conceived as a supporting role.",
+            "However, by the end of the first season, media outlets had begun referring to McCord as the series' lead.",
+            "[3][4] For the role of Naomi Clark, she was nominated for a Teen Choice Award and received the Hollywood Life Young Hollywood Superstar of Tomorrow award in 2009.",
+            "In 2010, she won a Breakthrough of the Year Award in the category of \"Breakthrough Standout Performance\"."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 39513,
+      "question": "When was the Annapolis Naval Academy founded?",
+      "answer": "10 October 1845",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sources": [
+        {
+          "title": "United States Naval Academy",
+          "text": [
+            "The institution was founded as the Naval School on 10 October 1845 by Secretary of the Navy George Bancroft.",
+            "The campus was established at Annapolis on the grounds of the former U.S. Army post Fort Severn.",
+            "The school opened with 50 midshipman students and seven professors.",
+            "The decision to establish an academy on land may have been in part a result of the Somers Affair, an alleged mutiny involving the Secretary of War's son that resulted in his execution at sea.",
+            "Commodore Matthew Perry had a considerable interest in naval education, supporting an apprentice system to train new seamen, and helped establish the curriculum for the United States Naval Academy.",
+            "He was also a vocal proponent of modernization of the navy."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 41529,
+      "question": "What is the major religion in Ukraine?",
+      "answer": "Christianity",
+      "gold_source_indices": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Religion in Ukraine",
+          "text": [
+            "Religion in Ukraine is diverse, with a majority of the population adhering to Christianity.",
+            "A 2018 survey conducted by the Razumkov Centre found that 71.7% of the population declared themselves believers.",
+            "About 67.3% of the population declared adherence to one or another strand of Orthodox Christianity (28.7% of the Kiev Patriarchate, 23.4% state simply 'Orthodox' with no declaration as to which Patriarchate they belong to, 12.8% of the Moscow Patriarchate, 0.3% Ukrainian Autocephalous Orthodox Church, and 1.9% other types of Orthodoxy), 7.7% 'Christian' with no declared denominational affiliation, 9.4% Ukrainian Byzantine Rite Catholics, 2.2% Protestants and 0.8% Latin Rite Catholics.",
+            "Judaism was the religion of the 0.4%; while Buddhism, Paganism (Rodnovery), and Hinduism were each the religions of 0.1% of the population.",
+            "A further 11.0% declared themselves non-religious or unaffiliated.",
+            "[1] According to the surveys conducted by Razumkov in the 2000s and early 2010s, such proportions have remained relatively constant throughout the last decade, while the proportion of believers overall has decreased from 76% in 2014 to 70% in 2016 and 72% in 2018.",
+            "[1][2] (p.22)."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 40537,
+      "question": "Who developed the Mind Palace technique of memorization?",
+      "answer": "Simonides",
+      "gold_source_indices": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Method of loci",
+          "text": [
+            "The designation is not used with strict consistency.",
+            "In some cases it refers broadly to what is otherwise known as the art of memory, the origins of which are related, according to tradition, in the story of Simonides of Ceos and the collapsing banquet hall.",
+            "[20] For example, after relating the story of how Simonides relied on remembered seating arrangements to call to mind the faces of recently deceased guests, Stephen M. Kosslyn remarks \"[t]his insight led to the development of a technique the Greeks called the method of loci, which is a systematic way of improving one's memory by using imagery.",
+            "\"[21] Skoyles and Sagan indicate that \"an ancient technique of memorization called Method of Loci, by which memories are referenced directly onto spatial maps\" originated with the story of Simonides.",
+            "[22] Referring to mnemonic methods, Verlee Williams mentions, \"One such strategy is the 'loci' method, which was developed by Simonides, a Greek poet of the fifth and sixth centuries BC.",
+            "\"[23] Loftus cites the foundation story of Simonides (more or less taken from Frances Yates) and describes some of the most basic aspects of the use of space in the art of memory.",
+            "She states, \"This particular mnemonic technique has come to be called the \"method of loci\".",
+            "[24] While place or position certainly figured prominently in ancient mnemonic techniques, no designation equivalent to \"method of loci\" was used exclusively to refer to mnemonic schemes relying upon space for organization.",
+            "[25]"
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 41762,
+      "question": "What is the seating capacity of the Los Angeles Rams stadium?",
+      "answer": "77,500",
+      "gold_source_indices": [
+        [
+          0,
+          8
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Los Angeles Memorial Coliseum",
+          "text": [
+            "The Los Angeles Memorial Coliseum is an American outdoor sports stadium located in the Exposition Park neighborhood of Los Angeles, California, United States.",
+            "The stadium serves as the home to the University of Southern California (USC) Trojans football team of the Pac-12 Conference.",
+            "It is also the temporary home of the Los Angeles Rams of the National Football League (NFL).",
+            "The Coliseum was home to the Rams from 1946 to 1979, when they moved to Anaheim Stadium in Anaheim.",
+            "The Coliseum is serving as their home stadium again until the completion of Los Angeles Stadium at Hollywood Park in Inglewood.",
+            "The facility had a permanent seating capacity of 93,607 for USC football and Rams games, making it the largest football stadium in the Pac-12 Conference and the NFL.",
+            "[11] USC, which operates and manages the Coliseum, began a major renovation of the stadium in early 2018.",
+            "[12] During the renovation project the seating capacity will be 78,467.",
+            "Once USC completes the renovation in 2019, the seating capacity will be 77,500.",
+            "[13]"
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 39929,
+      "question": "What is the earliest example of proto-writing that dates to the Bronze Age?",
+      "answer": "cuneiform script",
+      "gold_source_indices": [
+        [
+          0,
+          1
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Proto-writing",
+          "text": [
+            "The transition from proto-writing to the earliest fully developed writing systems took place in the late 4th to early 3rd millennia BCE in the Fertile Crescent.",
+            "The Kish tablet, dated to 3500 BCE, reflects the stage of \"proto-cuneiform\", when what would become the cuneiform script of Sumer was still in the proto-writing stage.",
+            "By the end of the 4th millennium BCE, this symbol system had evolved into a method of keeping accounts, using a round-shaped stylus impressed into soft clay at different angles for recording numbers.",
+            "This was gradually augmented with pictographic writing using a sharp stylus to indicate what was being counted.",
+            "The transitional stage to a writing system proper takes place in the Jemdet Nasr period (31st to 30th centuries BCE).",
+            "A similar development took place in the genesis of the Egyptian hieroglyphs.",
+            "Various scholars believe that Egyptian hieroglyphs \"came into existence a little after Sumerian script, and... probably [were]... invented under the influence of the latter...\",[7] although it is pointed out and held that \"the evidence for such direct influence remains flimsy\" and that \"a very credible argument can also be made for the independent development of writing in Egypt...\"[8] (See further Egyptian hieroglyphs)."
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_index": 40504,
+      "question": "What was Alan Jacobson's first published book?",
+      "answer": "False Accusations",
+      "gold_source_indices": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "sources": [
+        {
+          "title": "Alan Jacobson (writer)",
+          "text": [
+            "Twenty years later, in the early stages of his writing career, Jacobson realized the professor had a point.",
+            "If you were going to write about something like war and abdominal wounds, you needed to know what you were talking about.",
+            "[17] While writing his first published novel, False Accusations, his path crossed that of the head of the California Department of Justice.",
+            "During a phone call with Jacobson, he requested a reference on one of Jacobson's employees who was applying to be a forensic scientist.",
+            "Jacobson then asked the director a question about a novel he was writing (False Accusations) involving the character of Ryan Chandler.",
+            "[18]"
+          ],
+          "is_gold": true,
+          "gold_sentence_indices": [
+            2,
+            4
+          ]
+        }
+      ]
+    }
+  ]
+}
