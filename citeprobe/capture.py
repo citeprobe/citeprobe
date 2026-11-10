@@ -13,6 +13,8 @@ fit. Both give the same attention_sum, up to floating point.
 import functools
 import json
 import pathlib
+import re
+import sys
 from dataclasses import asdict, dataclass
 
 import numpy
@@ -161,7 +163,8 @@ def _report_offload(model) -> None:
     device_map = getattr(model, "hf_device_map", None) or {}
     offloaded = [name for name, placed in device_map.items() if placed == "cpu"]
     if offloaded:
-        print(f"Offloaded {len(offloaded)} of {len(device_map)} modules to CPU (slower).")
+        print(f"Offloaded {len(offloaded)} of {len(device_map)} modules to CPU (slower).",
+              file=sys.stderr)
 
 
 def load_tokenizer(spec: ModelSpec):
@@ -292,6 +295,56 @@ def citable_char_range(response: str, tokenizer, spec: ModelSpec) -> list[int] |
         return None
     offset = answer_start + citable.find(stripped)
     return [offset, offset + len(stripped)]
+
+
+# A sentence ends at . ! or ? (plus any closing quotes or brackets) followed by
+# whitespace, or at a line break. List markers at the start of a line are not
+# part of the statement.
+_SENTENCE_END = re.compile(r"[.!?][\"'”’)\]]*(?=\s)|\n+")
+_LIST_MARKER = re.compile(r"\s*(?:[-*•]|\d+[.)])\s+")
+# Periods that do not end a sentence: titles, Latin shorthands, initials.
+_ABBREVIATIONS = frozenset({
+    "mr", "mrs", "ms", "dr", "prof", "sr", "jr", "st", "vs", "etc", "e.g", "i.e", "cf", "al",
+    "approx", "no", "vol", "fig", "inc", "ltd", "co", "corp", "jan", "feb", "mar", "apr", "jun",
+    "jul", "aug", "sep", "sept", "oct", "nov", "dec", "u.s", "u.k", "a.m", "p.m",
+})
+
+
+def split_statements(response: str, char_range: list[int]) -> list[list[int]]:
+    """Split the citable answer into sentence char ranges, in response coordinates.
+
+    Each range is stripped of surrounding whitespace and leading list
+    markers; fragments with no letter or digit (stray punctuation) are
+    dropped. An answer with no sentence boundary comes back as one range.
+    """
+    start, end = char_range
+    text = response[start:end]
+    cuts = [0]
+    for match in _SENTENCE_END.finditer(text):
+        if match.group().startswith(".") and _is_abbreviation(text, match.start()):
+            continue
+        cuts.append(match.end())
+    cuts.append(len(text))
+
+    ranges: list[list[int]] = []
+    for left, right in zip(cuts, cuts[1:], strict=False):
+        fragment = text[left:right]
+        marker = _LIST_MARKER.match(fragment)
+        lead = marker.end() if marker else len(fragment) - len(fragment.lstrip())
+        body = fragment[lead:].rstrip()
+        if any(character.isalnum() for character in body):
+            ranges.append([start + left + lead, start + left + lead + len(body)])
+    return ranges or [list(char_range)]
+
+
+def _is_abbreviation(text: str, period: int) -> bool:
+    """Whether the period at this index closes an abbreviation, an initial or a list number."""
+    line = text[:period].rsplit("\n", maxsplit=1)[-1]
+    if line.strip().isdigit() and line.strip() == line.lstrip():
+        return True  # "1." opening a numbered list item
+    word = line.rsplit(maxsplit=1)[-1] if line.strip() else ""
+    word = word.lstrip("(\"'“‘[")
+    return (len(word) == 1 and word.isupper()) or word.lower() in _ABBREVIATIONS
 
 
 def _answer_start(response: str, spec: ModelSpec) -> int | None:

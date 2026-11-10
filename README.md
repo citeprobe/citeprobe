@@ -17,14 +17,44 @@ For Qwen3.5, installing `flash-linear-attention` speeds up its linear-attention 
 ## Use CiteProbe
 
 ```bash
-# Smoke test: checks the installation, model download, and probe.
-uv run python cite.py --model phi4-mini
-
 # Your question and context, one source sentence per line.
-uv run python cite.py --model gemma4-12b \
-    --question "Who built it?" \
+uv run python cite.py --model gemma4-12b --threshold 0.6 \
+    --question "Who built the tower, and how tall is it? Answer in two sentences." \
     --context_file examples/sample-passage.txt
+```
 
+Outputs JSON:
+
+```json
+{
+    "context": [
+        "The Eiffel Tower is...",
+        "It is named after...",
+        "...more sentences..."
+    ],
+    "question": "Who built the tower, and how tall is it? Answer in two sentences.",
+    "answer": "The tower built by Gustave Eiffel. It stands 330 metres tall.",
+    "statements": [
+        {
+            "statement": "The tower was built by engineer Gustave Eiffel.",
+            "citations": [{
+                "context": 1, // refers to context[1]
+                "confidence": 0.9981
+            }, {
+                "context": 0, 
+                "confidence": 0.6088
+            }]
+        },
+        {
+            "statement": "It stands 330 metres tall.",
+            // same as above for second statement in answer
+        }
+    ]
+}
+```
+
+## Surrogate mode
+```bash
 # Surrogacy: cite an answer produced by any other model.
 uv run python cite.py --model phi4-mini \
     --question "Who built it?" \
@@ -35,6 +65,30 @@ uv run python cite.py --model phi4-mini \
 Models: `phi4-mini`, `ministral-8b`, `qwen3.5-9b`, `gemma4-12b`.
 
 **Note:** Weights are automatically offloaded to CPU when GPU memory is insufficient.
+
+## API
+
+```bash
+uv run python cite.py --model phi4-mini --api    # --host 127.0.0.1 --port 8000 by default
+```
+
+Call the API (`answer` optionally turns API into surrogate mode):
+
+```bash
+curl -X POST localhost:8000/cite -d '{
+    "context": ["The Eiffel Tower is...", "It is named after...", "..."],
+    "question": "Who built it?",
+    "answer": "The company of Gustave Eiffel built it."
+}'
+```
+
+## Additional options
+
+- `--threshold` (default 0.7): lowest confidence a kept citation may have.
+- `--top-k`: gives top-k citations. overrides --threshold.
+
+
+Both work on the command line and as the server's defaults; a request can override them with `top_k` and `threshold`.
 
 ## Reproduce the probes
 
